@@ -22,19 +22,32 @@ There is a list with the most significant folders and files.
 Every file with code has the proper comments explaining the code:
 
 -*public/index.html*
+
 Home page source html code is at file public/index.html . 
 The home page just redirects the user to every one of the six Interaction Techniques. 
 
+
+
 -*public/views*
+
 There can be found the source code (html,css,javascript) of every Interaction Technique page. 
 
+
+
 -*public/img*
+
 There can be found all the images which used through the web page.
 
+
+
 -*public/js*
+
 There can be found all the needed javascript files (including controllers and services). The file loadjson.js has the javascript code for loading and showing all the texts from json files in the webpage.
 
+
+
 -*public/json*
+
 There can be found all the json files which contains all the showing texts in the webpage.
 
 
