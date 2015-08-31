@@ -1,0 +1,1 @@
+angular.module('sampleApp', ['ngRoute', 'appRoutes', 'MainCtrl', 'ClickCtrl', 'ClickService', 'HoverCtrl', 'HoverService', 'ZoomCtrl', 'ZoomService', 'SliderCtrl', 'SliderService', 'DragCtrl', 'DragService', 'CarouzelCtrl', 'CarouzelService']);
