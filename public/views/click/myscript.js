@@ -1,4 +1,10 @@
-$(document).ready(function(){                                                 // jquery
+$(document).ready(function(){   
+var screenHeight = screen.height;
+if (screenHeight < 800) {
+  $('body').css('zoom', 0.8);
+} else {
+     $('body').css('zoom', 1);
+}                                              // jquery
 
   $(".a").click(function() {                                                  // if user click eurobasket_1987 image
     $("div").finish();                                                        // stop every running fade-in 

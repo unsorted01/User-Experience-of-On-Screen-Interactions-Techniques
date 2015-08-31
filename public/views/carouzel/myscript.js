@@ -7,7 +7,15 @@
 */
 
 (function($){
+  
 $.fn.carousel3d = function(args){
+  
+  var screenHeight = screen.height;
+if (screenHeight < 800) {
+  $('body').css('zoom', 0.8);
+} else {
+     $('body').css('zoom', 1);
+} 
 
 	var el = ({
 		carousel_frame: $(this)

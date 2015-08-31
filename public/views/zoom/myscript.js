@@ -1,4 +1,13 @@
 $(document).ready(function($){
+
+    var screenHeight = screen.height;
+if (screenHeight < 800) {
+  $('body').css('zoom', 0.8);
+} else {
+     $('body').css('zoom', 1);
+}        
+
+
   $(".a").click(function() {                                                        // if user click eurobasket_1987 image       
     $("li").removeClass('clicked');                                                 // removes the class "clicked" in every item at the timeline
     $(".a").addClass('clicked');                                                    // inserts the class "clicked" to the relative item at the timeline

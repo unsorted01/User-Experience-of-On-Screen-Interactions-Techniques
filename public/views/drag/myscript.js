@@ -1,4 +1,14 @@
-var d=-1;                                                                   // set counter to decide which object dragged
+$(document).ready(function(){
+var screenHeight = screen.height;
+if (screenHeight < 800) {
+  $('body').css('zoom', 0.8);
+} else {
+     $('body').css('zoom', 1);
+}        
+})
+
+var d=-1;     
+                                                              // set counter to decide which object dragged
 function allowDrop(ev) {                                                   
     ev.preventDefault();                                                    // drop-target border change
     ev.target.style.border = "3px dotted red";   

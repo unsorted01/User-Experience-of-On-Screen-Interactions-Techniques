@@ -1,12 +1,12 @@
 body {
   background-image: url("/img/background.jpg"),url("/img/background2.jpg");
   background-repeat: repeat-x, repeat-x;
-  background-position: 0px 335px, 0px 0px;
+  background-position: 0px 372px, 0px 0px;
   color: #335CAD;
 resize: horizontal;
 font-family: 'PT Serif Caption'; 
 font-size: 90%;
-height: 1600px;
+height: 1100px;
 }
 
 

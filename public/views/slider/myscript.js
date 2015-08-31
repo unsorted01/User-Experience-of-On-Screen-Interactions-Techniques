@@ -1,4 +1,13 @@
 $(document).ready(function(){
+
+    var screenHeight = screen.height;
+if (screenHeight < 800) {
+  $('body').css('zoom', 0.8);
+} else {
+     $('body').css('zoom', 1);
+}        
+
+
   $("#rangeinput").change(function() {
     if (rangevalue.value>=0&&rangevalue.value<=10) {                          // if user slides to eurobasket_1987 image
     $("div").finish();                                                        // stop every running fade-in 
