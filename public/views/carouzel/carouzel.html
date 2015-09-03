@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>3D Carousel condition</title>
+
+<meta name="viewport" content="width=device-width">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="/views/carouzel/mystyle.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Serif+Caption" />
+  <!-- JS -->
+  <script src="libs/angular/angular.min.js"></script>
+  <script src="libs/angular-route/angular-route.min.js"></script>
+  <script src="libs/jquery.min.js"></script>
+
+ <!-- CAROUSEL FUNCTION -->
+  <script type="text/javascript">
+		$(document).ready(function(){
+			$('#carousel').carousel3d();
+		});
+	</script>
+
+  <!-- ANGULAR CUSTOM -->
+  <script src="js/controllers/MainCtrl.js"></script>
+  <script src="js/controllers/ClickCtrl.js"></script>
+  <script src="js/services/ClickService.js"></script>
+  <script src="js/controllers/HoverCtrl.js"></script>
+  <script src="js/services/HoverService.js"></script>
+  <script src="js/controllers/ZoomCtrl.js"></script>
+  <script src="js/services/ZoomService.js"></script>
+  <script src="js/controllers/SliderCtrl.js"></script>
+  <script src="js/services/SliderService.js"></script>
+  <script src="js/controllers/DragCtrl.js"></script>
+  <script src="js/services/DragService.js"></script>
+  <script src="js/controllers/CarouzelCtrl.js"></script>
+  <script src="js/services/CarouzelService.js"></script>
+  <script src="js/appRoutes.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- INTERACTIONS TECHNIQUES SCRIPTS -->
+  <script src="js/loadjson.js"></script> 
+  <script src="/views/carouzel/myscript.js"></script>
+
+</head>
+
+<!-- SET THE CONTROLLER -->
+<body ng-app="sampleApp" ng-controller="CarouzelController">
+
+<h1>The greatest moments of Greek National Teams</h1>
+
+<p><img src="/img/hellas.png" alt="Hellas" style="float:left;width:108px;height:178;margin-right:178px;margin-left:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Greece has a great sport history, since it was the country which held the Ancient Olympic Games. In the modern era, Greek National Teams had proved that they can achieve great accomplishments. Also, Greek clubs had many accomplishments in various sports worldwide. Τhe point of this article is to present the greatest moments of the Greek Nationals Teams over the past few years. <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The greatests achievements are proven to be those that make the people go out and celebrate! That's the criteria we choose to select the biggest moments of the Greek National Teams and thats why we present these 6 particular tournaments. Those are, the great win at  Eurobasket 1987, the amazing success of winning the European Cup  in 2004, the sixteen medals in the Olympic Games 2004, the first place of Eurobasket 2005, the second of Mundobasket 2006 and the qualification to the knockout stages at Mundial 2014. <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flip over the different images in the timeline in order to see every moment in detail. As soon as the browsing is complete, you may fill in a questionnaire <b><a href="https://unsorted01.typeform.com/to/RiwN23" target="_blank">here.</a></b></p>
+
+<!-- TIMELINE -->
+<ol>
+   <li class="a">
+    Eurobasket 1987
+  </li>
+  <li class="b">
+    Euro 2004
+  </li>
+  <li class="c">
+    Olympic Games 2004
+  </li>
+  <li class="d">
+   Eurobasket 2005
+  </li>
+  <li class="e">
+     Mundobasket 2006
+  </li>
+  <li class="f">
+       Mundial 2014
+  </li>
+</ol>
+
+<!-- CAROUZEL -->
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div>
+  <div id="perspective">
+    <div id="carousel">
+      <figure><img src="/img/eurobasket_1987.jpg" alt="Eurobasket 1987" style="width:512px;height:288px"></figure>
+      <figure><img src="/img/euro_2004.jpg" alt="Euro 2004" style="width:512px;height:288px"></figure>
+      <figure><img src="/img/olympic_2004.jpg" alt="Olympic Games 2004" style="float:left;width:512px;height:288px"></figure>
+      <figure><img src="/img/eurobasket_2005.jpg" alt="Eurobasket 2005" style="width:512px;height:288px"></figure>
+      <figure><img src="/img/mundobasket_2006.jpg" alt="Mundobasket 2006" style="width:512px;height:288px"></figure>
+      <figure><img src="/img/mundial_2014.jpg" alt="Mundial 2014" style="width:512px;height:288px"></figure>
+    </div>
+  </div>
+
+</div>
+
+<!-- TEXT -->
+<div id="mytext"></div>
+
+</body>
+</html>
