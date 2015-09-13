@@ -1,0 +1,214 @@
+body {
+  color: #335CAD;
+resize: horizontal;
+font-family: 'PT Serif Caption'; 
+font-size: 90%;
+}
+
+html{
+ position:absolute;
+ margin:0px;
+ padding:0px;
+}
+body{
+   position:absolute;
+   padding:0px;
+   margin:0px; 
+   top:0px;
+   left:0px;
+height: 1400px;
+width:1880px;
+}
+
+.bg
+{      
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 102.1%;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+p{color: black;
+margin-left:30px;}
+
+button {
+   font-family: 'Arial'; 
+  font-size: 130%; 
+  color:#06314e; 
+  font-weight: bold; 
+  float:center; 
+  text-align:center;
+  position: absolute;
+cursor: pointer;
+display: none;
+left:45%; 
+  background-image: -webkit-linear-gradient(top, #10222e, #61c2ff);
+  background-image: -moz-linear-gradient(top, #10222e, #61c2ff);
+  background-image: -ms-linear-gradient(top, #10222e, #61c2ff);
+  background-image: -o-linear-gradient(top, #10222e, #61c2ff);
+  background-image: linear-gradient(to bottom, #10222e, #61c2ff);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #ffffff;
+  background: #3cb0fd;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+/* ---- Timeline ---- */
+
+ol {
+  top:80px;
+  position: relative;
+  display: block;
+  margin: 140px;
+  margin-left: 0px;
+  margin-right: 10px;
+  height: 100px;
+  width: 100%;
+  background-image: url("/img/background.jpg");
+  background-repeat: repeat-x;
+  background-position: 0px 0px;
+  background-size: auto;
+  resize: horizontal;
+}
+
+/* ---- Timeline elements ---- */
+
+li {
+  position: relative;
+  top: -90px;
+  display: inline-block;
+  float: center;
+  width: 150px;
+  right: -200px;
+  margin-right: 110px;
+  transform: rotate(-45deg);
+  font: bold 14px arial;
+resize: horizontal;
+
+}
+
+li::before {
+  transform: rotate(45deg);
+  background-size: 103px 58px;
+  background-repeat: no-repeat;
+  padding-left: 60px;
+  padding-right: 60px;
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: -145px;
+  display: block;
+  height: 160px;  
+resize: horizontal;
+  }
+li.a::before {
+ background-image: url("/img/eurobasket_1987.jpg")
+}
+li.b::before {
+  background-image: url("/img/euro_2004.jpg");
+}
+li.c::before {
+  background-image: url("/img/olympic_2004.jpg");
+}
+li.d::before {
+  background-image: url("/img/eurobasket_2005.jpg");
+}
+li.e::before {
+  background-image: url("/img/mundobasket_2006.jpg");
+}
+li.f::before {
+  background-image: url("/img/mundial_2014.jpg");
+}
+
+
+/* ---- Hover effects ---- */
+
+li:hover {
+  cursor: pointer;
+  color: #B20000;
+  font: bold 14px arial ;
+}
+
+.clicked {
+  font: bold 14px arial ;
+color: #B20000;
+  }
+.clicked::before {
+background-size: 123px 68px;
+  top: 22px;
+  left: -140px;
+color: #B20000;
+  }
+
+#mytext{
+  left: 20px;
+   top: 40px;
+  text-indent:25px;
+  font-family: 'PT Serif Caption';
+  display: none;
+  color: black;
+  margin-right:60px;
+  position: relative;
+}
+
+
+ .im1,.im2,.im3,.im4,.im5,.im6{
+  left: 20px;
+   top: 40px;
+    float:left;
+    width:512px;
+    height:288px;
+    display: none;
+    margin-right:25px;
+    margin-bottom:25px;
+   position: relative;
+  }
+  
+entity {
+    position: relative;
+    cursor: pointer;
+    font-style:italic;
+    text-decoration: underline;
+}
+
+entity:hover:after {
+    background: hsla(0,0%,0%,.9);
+    border-radius: 5px;
+    color: #f6f6f6;
+    content: attr(data-content)'';
+    font: bold 12px/30px sans-serif;
+ 
+  border-left: 70px;
+  left: -150px;
+
+    position: absolute;
+    top: 30px;
+    width: 320px;
+    max-height:400px;
+    z-index:1;
+    overflow: hidden;
+
+}
+entity:hover:before {
+    border-bottom: 10px solid hsla(0,0%,0%,.9);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: '';
+    height: 0;
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+    top: 20px;
+    width: 0;
+}
+entity:target {
+    display: none;
+}
